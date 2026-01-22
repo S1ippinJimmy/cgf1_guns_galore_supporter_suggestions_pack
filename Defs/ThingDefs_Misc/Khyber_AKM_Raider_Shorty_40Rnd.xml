@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T1">
+		<defName>CGF1_MWP_Khyber_AKM_Raider_Shorty_40Rnd_</defName>
+		<label>Khyber AKM "Raider" Shorty (40Rnd)</label>
+		<description>Caliber: 7.62x39mm. 40-round detachable mag. Select-Fire.
+		
+The AK (Avtomat Kalashnikova) is a Soviet assault rifle designed between 1946-1947 by Mikhail Kalashnikov. Commonly (and somewhat anachronistically) known as the "AK-47," the AK is one of the most recognizable and widely used weapons platforms ever made, with over 100 million Kalashnikov-type guns having been produced since 1948. Reputed for its ease of mass production and reliability, the AK was the backbone of the Soviet Armed Forces and continues to be the standard service platform in most former Warsaw Pact nations.
+
+The early line of AK rifles was produced from 1948 to 1959, with all three major variations still designated "AK." In 1959, the AK underwent a major redesign which was accepted into service as the "AKM" (Avtomat Kalashnikova modernizirovanny.) The AKM returned to a stamped steel receiver process that had been intended for the original AKs but was replaced by milling. The lighter AKM introduced completely new wooden furniture (stock, pistol grip, and handguard), iron sights, a chrome-lined barrel, an improved gas block and bolt carrier assembly, and modified trigger group, among other changes - all of which improved the process of mass production and the quality of the rifle. The AKM was introduced alongside new accessories including a new bayonet, suppressor, and magazines. Over ten million AKMs were produced until 1977 (making it the longest produced AK in the USSR) and the design was widely exported.
+
+This is a Khyber Pass-produced AKM that was hand-crafted, but has the same practical quality as a factory made gun. It has been fitted with a makeshift 40-round magazine with window cuts made to view loaded ammunition. For whatever reason, the wood stock on this rifle has been mostly (but not completely) sawed away.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Khyber_AKM_Raider_Shorty_40Rnd</texPath>
+			<drawSize>1.01</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>3.25</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_AR_Civilian</li>
+			<li>CGF1_AR_Military</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_KhyberPass</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Auto</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>CGF1_GG_SFXR_Rifle2</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.5,0.03)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+	</ThingDef>
+	
+</Defs>

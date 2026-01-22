@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_ASP_Baton</defName>
+		<label>ASP baton</label>
+		<description>A retractable baton design originally created by the Armament Systems and Procedures (ASP) company. ASP batons can be folded for concealment and easy carry purposes.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/ASP_Baton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.87</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance>0.1</relicChance>
+		<costList>
+			<Chemfuel>30</Chemfuel>
+		</costList>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+			<li>CGF1_CopsRobbers_Modern_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.1</cooldownTime>
+			</li>
+			 <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.1</cooldownTime>
+			  </li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Common</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

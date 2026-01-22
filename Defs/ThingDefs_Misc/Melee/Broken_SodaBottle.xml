@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Broken_SodaBottle_" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Broken_SodaBottle_</defName>
+		<label>broken soda bottle</label>
+		<description>A broken- and empty- bottle of soda. The neck of the bottle is pretty easy to grip, and the sharp edges of the body could be useful to stab someone with, if you were super desperate.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Broken_SodaBottle</texPath>
+			<drawSize>0.98</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>	
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ImprovisedWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<costList>
+			<Beer>1</Beer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>500</WorkToMake>
+			<MarketValue>25</MarketValue>
+			<Mass>0.15</Mass>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Pigskin_Villager</li>
+			<li>CGF1_Weapon_VRE_SauridVillager</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+			<li>CGF1_Improvised_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>bottle</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>neck</label>
+				<capacities>
+				  <li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Broken_SodaBottle_">
+		<defName>CGF1_MWP_Broken_SodaBottle_Diet_</defName>
+		<label>broken soda bottle (diet)</label>
+		<description>A broken- and empty- bottle of diet soda. The neck of the bottle is pretty easy to grip, and the sharp edges of the body could be useful to stab someone with, if you were super desperate.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Broken_SodaBottle_Diet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.98</drawSize>
+		</graphicData>
+		<relicChance>0.0</relicChance>
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Broken_SodaBottle_">
+		<defName>CGF1_MWP_Broken_SodaBottle_Lime_</defName>
+		<label>broken soda bottle (lime)</label>
+		<description>A broken- and empty- bottle of lime soda. The neck of the bottle is pretty easy to grip, and the sharp edges of the body could be useful to stab someone with, if you were super desperate.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Broken_SodaBottle_Lime</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.98</drawSize>
+		</graphicData>
+		<relicChance>0.0</relicChance>
+	</ThingDef>
+
+	
+</Defs>

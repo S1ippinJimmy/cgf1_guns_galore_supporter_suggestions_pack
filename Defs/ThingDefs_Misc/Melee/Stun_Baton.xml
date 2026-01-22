@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Stun_Baton" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Stun_Baton</defName>
+		<label>stun baton</label>
+		<description>This is a specialized baton designed to deliver an electric shock to anyone unlucky enough to be on the receiving end. These are quite similar to an electric cattle prod but are made for violent purposes rather than agricultural means. The electric shock causes pain and disrupts muscle functions (and electronic sensors in machines), temporarily rendering the recipient immobile and unable to act.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Stun_Baton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance>0.1</relicChance>
+		<costList>
+			<Chemfuel>30</Chemfuel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>1.1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_AncientSoldier_Armory</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+			<li>CGF1_CopsRobbers_Modern_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			 <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.5</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>32</amount>
+					</li>
+				</extraMeleeDamages>
+			  </li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Common</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Stun_Baton">
+		<defName>CGF1_MWP_Stun_Baton_Yellow</defName>
+		<label>stun baton</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Stun_Baton_Yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<recipeMaker Inherit="False"/>
+		<relicChance>0.1</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_AncientSoldier_Armory</li>
+		</weaponTags>
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+</Defs>

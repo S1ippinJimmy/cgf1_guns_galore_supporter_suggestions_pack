@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Crowbar" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Crowbar</defName>
+		<label>crowbar</label>
+		<description>A crowbar is a type of lever consisting of a metal bar that is used to assist in forcing objects apart or lifting an object. They are commonly called "crowbars" because of the bar's passing resemblance to the feet or beak of a crow. Crowbars are designed to be tools, but popular video games such as the Half-Life series, Escape from Tarkov, and Project Zomboid have also helped cement the crowbar's reputation as an ad-hoc melee weapon.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Crowbar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_IndustrialTools</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance>0.1</relicChance>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-5</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Crowbar">
+		<defName>CGF1_MWP_Crowbar_Blue</defName>
+		<label>Crowbar</label>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Crowbar_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<recipeMaker Inherit="False"/>
+		<relicChance>0.01</relicChance>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Crowbar">
+		<defName>CGF1_MWP_Crowbar_Yellow</defName>
+		<label>Crowbar</label>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Crowbar_Yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<recipeMaker Inherit="False"/>
+		<relicChance>0.01</relicChance>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Crowbar">
+		<defName>CGF1_MWP_Crowbar_Pink</defName>
+		<label>Crowbar</label>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Crowbar_Pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<recipeMaker Inherit="False"/>
+		<relicChance>0.01</relicChance>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<generateCommonality>0.0050</generateCommonality> <!-- Ultra Rare -->
+	</ThingDef>
+	
+</Defs>

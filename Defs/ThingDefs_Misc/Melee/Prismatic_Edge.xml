@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Prismatic_Edge</defName>
+		<label>Prismatic Edge</label>
+		<description>To ascend, I need not destroy that which stands before me. No, I must embrace it.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Prismatic_Edge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.40</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Archotech</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<CGF1_MWP_Shinigami>1</CGF1_MWP_Shinigami>
+			<CGF1_MWP_Starbright>1</CGF1_MWP_Starbright>
+		</costList>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>0.0001</relicChance>
+		<statBases>
+			<WorkToMake>500000</WorkToMake>
+			<MarketValue>40000</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+			<MoveSpeed>0.50</MoveSpeed>
+			<IncomingDamageFactor>0.75</IncomingDamageFactor>
+			<MeleeHitChance>0.5</MeleeHitChance>
+		</equippedStatOffsets>
+		<weaponTags Inherit="False"/>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<tradeability>Sellable</tradeability>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>100</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>2.0</armorPenetration>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>95</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>2.0</armorPenetration>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.25,0.0,0.30)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>-65</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.35,0.00,0.30)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-65</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.25,0.00,0.30)</drawOffset>
+						<angleOffset>-65</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.35,0.0,0.30)</drawOffset>
+						<angleOffset>65</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions> 
+		<generateCommonality>0.0</generateCommonality> <!-- Nonexistent -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+</Defs>

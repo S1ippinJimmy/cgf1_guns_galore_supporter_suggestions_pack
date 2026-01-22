@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Baseball_Bat_Barbed</defName>
+		<label>baseball bat (barbed)</label>
+		<description>A wooden club traditionally used to play the American sport of baseball, with similar implements also being used in sports such as rounders and softball. Outside of their sporting use, baseball bats are also common weapons in certain circumstances - it's essentially a heavy club designed to maximize hitting power, and that force can be turned on a threat as easily as it can be used on a ball. While it's not quite a battlefield weapon, baseball bats are very accessible, due to their relatively low cost, widespread manufacture, and the fact that they are not usually subject to extensive legal regulations like knives, guns, and other weapons. 
+		
+		This baseball bat has been modified for fighting purposes by having metallic barbs driven into it. While modifications like this can compromise the integrity of the bat's construction, they make for a much deadlier and more intimidating weapon.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Baseball_Bat_Barbed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ImprovisedWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<relicChance>0.1</relicChance>
+		<costList>
+			<Steel>20</Steel>
+		</costList>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+			<li>CGF1_CopsRobbers_Modern_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+			 <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2.2</cooldownTime>
+			  </li>
+			  <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.2</cooldownTime>
+			  </li>
+		</tools>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+</Defs>

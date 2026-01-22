@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef MayRequire="vanillaracesexpanded.archon" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Archolance</defName>
+		<label>archolance</label>
+		<description>An ethereal weapon forged in the engimatic crucibles of an archotech. A fusion of unknown materials and arcane science, the Archolance has the uncanny ability to phase through flesh, leaving behind agonizing scars by skipping tissue out of existence.\n\nArcholances amplify the psychic prowess of its bearer, resonating only with those who bear the archotech’s celestial touch. Archolances are often imbued with powerful psycasts, and are almost always wielded exclusively by the enigmatic archons.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Archolance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Archotech</techLevel>
+		<recipeMaker Inherit="False"/>
+		<costList>
+			<Steel>100</Steel>
+		</costList>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<relicChance>0.5</relicChance>
+		<statBases>
+			<MarketValue>7800</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>5</Mass>
+			<VEF_MeleeWeaponRange>2.84</VEF_MeleeWeaponRange>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Archon</li>
+			<li>ArchobladeBladelink</li>
+			<li>ExcludeFromEmpireTitleReward</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+			<li>Ultratech</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>VREA_Sear</li>
+				</capacities>
+				<power>43</power>
+				<cooldownTime>2.2</cooldownTime>
+				<armorPenetration>2.0</armorPenetration>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_BladelinkWeapon">
+				<biocodeOnEquip>true</biocodeOnEquip>
+			</li>
+			<li Class="CompProperties_GeneratedName">
+				<nameMaker>NamerWeaponArchon</nameMaker>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.34,0,0.40)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.1,0,0.40)</drawOffset>
+						<angleOffset>-122</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(-0.34,0,0.40)</drawOffset>
+						<angleOffset>-143</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.1,0,0.40)</drawOffset>
+						<angleOffset>122</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>		
+			</li>
+		</modExtensions>
+		<burnableByRecipe>true</burnableByRecipe>
+		<notifyMapRemoved>true</notifyMapRemoved>
+		<thingCategories>
+			<li>WeaponsMeleeBladelink</li>
+		</thingCategories>
+		<thingSetMakerTags Inherit="False">
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+			<li>WeaponBladelink</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

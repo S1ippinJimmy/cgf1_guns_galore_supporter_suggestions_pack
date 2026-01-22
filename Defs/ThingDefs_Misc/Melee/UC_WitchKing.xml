@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_UC_WitchKing</defName>
+		<label>UC WitchKing</label>
+		<description>This is a replica of the sword wielded by the Witch King from Peter Jackson's Lord of the Rings trilogy. While many reproductions of fictional weapons are meant for display and not for fighting, this version based on a design distributed by United Cutlery has been forged to be a capable weapon.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/UC_WitchKing</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>125</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>Woody</li>-->
+		</stuffCategories>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>0.01</relicChance>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Imperial_Champion</li>
+			<li>CGF1_Weapon_Imperial_Royal</li>
+			<li>CGF1_Weapon_Biotech_Sanguophage</li>
+			<li>CGF1_Weapon_Horax_Highthrall</li>
+			<li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+				<li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>3</cooldownTime>
+				<armorPenetration>0.35</armorPenetration>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>3</cooldownTime>
+				<armorPenetration>0.35</armorPenetration>
+			  </li>
+		</tools>
+		<modExtensions>
+			<li Class="VEF.Things.ThingDefExtension">
+				<weaponDraftedDrawOffsets>
+					<north>
+						<drawOffset>(0.25,0.0,0.30)</drawOffset> <!--0.30,0,0.40-->
+						<angleOffset>-65</angleOffset>
+					</north>
+					<east>
+						<drawOffset>(0.35,0.00,0.30)</drawOffset> <!--0.30,0.2,0.40-->
+						<angleOffset>-65</angleOffset>
+					</east>
+					<south>
+						<drawOffset>(0.25,0.00,0.30)</drawOffset>
+						<angleOffset>-65</angleOffset>
+					</south>
+					<west>
+						<drawOffset>(-0.35,0.0,0.30)</drawOffset>
+						<angleOffset>65</angleOffset>
+					</west>
+				</weaponDraftedDrawOffsets>
+			</li>
+		</modExtensions> 
+		<generateCommonality>0.0050</generateCommonality> <!-- Ultra Rare -->
+	</ThingDef>
+	
+</Defs>

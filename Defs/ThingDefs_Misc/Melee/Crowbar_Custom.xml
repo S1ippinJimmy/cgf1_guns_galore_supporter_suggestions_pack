@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Crowbar_Custom</defName>
+		<label>crowbar (custom)</label>
+		<description>A crowbar is a type of lever consisting of a metal bar that is used to assist in forcing objects apart or lifting an object. They are commonly called "crowbars" because of the bar's passing resemblance to the feet or beak of a crow. Crowbars are designed to be tools, but popular video games such as the Half-Life series, Escape from Tarkov, and Project Zomboid have also helped cement the crowbar's reputation as an ad-hoc melee weapon.
+
+This is a customizable variant that can be made out of numerous materials, potentially increasing its effectiveness or value.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Crowbar_Custom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_IndustrialTools</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance>0.01</relicChance>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>CGF1_StuffCategory_Jade</li>-->
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-5</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Demolish</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1</cooldownTime>
+			</li>
+		</tools>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+	</ThingDef>
+
+	
+</Defs>

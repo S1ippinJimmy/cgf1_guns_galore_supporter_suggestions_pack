@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Riot_Baton</defName>
+		<label>riot baton</label>
+		<description>This is a "straightstick"-style baton designed for riot control purposes. Batons in this form are the oldest of the "modern" police "compliance instruments," and have generally been supplemented for general duty purposes by side-handled and collapsible batons, which are usually lighter and more ergonomic. However, these riot batons remain preferred in some cases, as they can deliver powerful strikes from the head of the weapon. Many consider them more effective when wielded on horseback or in tandem with a riot shield.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Riot_Baton</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<relicChance>0.1</relicChance>
+		<costList>
+			<Chemfuel>35</Chemfuel>
+		</costList>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Mass>1.1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+			<li>CGF1_Weapon_Horax_Underthrall</li>
+			<li>CGF1_FG_CWUSA_Police_Cop_Riot</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+			<li>CGF1_CopsRobbers_Modern_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.4</cooldownTime>
+			</li>
+			 <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.4</cooldownTime>
+			  </li>
+		</tools>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+</Defs>

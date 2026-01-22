@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_FireSteel_Bakuzan</defName>
+		<label>Fire &amp; Steel Bakuzan</label>
+		<description>This is a replica of the sword Bakuzan from the Kill la Kill anime, originally wielded by Satsuki Kiryuin. While many reproductions of fictional weapons are meant for display and not for fighting, this version based on a design distributed by Fire &amp; Steel (a Canadian company) has been forged to be a capable weapon.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/FireSteel_Bakuzan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>CGF1_StuffCategory_Jade</li>-->
+		</stuffCategories>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>0.01</relicChance>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1.8</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Biotech_Sanguophage</li>
+			<li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+			<li>CGF1_Weapon_Imperial_Royal</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+				<li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>22</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			  </li>
+		</tools>
+		<generateCommonality>0.0050</generateCommonality> <!-- Ultra Rare -->
+	</ThingDef>
+	
+</Defs>

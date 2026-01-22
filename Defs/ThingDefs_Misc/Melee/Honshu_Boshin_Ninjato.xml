@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Honshu_Boshin_Ninjato</defName>
+		<label>Honshu Boshin ninjatō</label>
+		<description>This is a modern replica of a "ninjatō" manufactured by Honshu. Ninjatō are a type of single-edged sword that were supposedly once preferred by the shinobi in feudal Japan - very similar to the katana, the distinguishing feature of a ninjatō is the straight rather than curved blade. The first known attestations of ninjatō come from the 20th century (long after the end of the feudal period), and while there were straight swords made in Japan at times, there are no sources suggesting that they were prolific among the ninja.
+		
+Regardless, such weapons have become pretty popular among amateur sword collectors and martial arts practitioners due to their media presence, and this has resulted in numerous ninjatō designs being produced to the present day. While many of them are of dubious quality ("mall ninja shit"), swords like this particular one have been designed to be combat effective.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Honshu_Boshin_Ninjato</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>CGF1_StuffCategory_Jade</li>-->
+		</stuffCategories>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>0.01</relicChance>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Biotech_Sanguophage</li>
+			<li>CGF1_Weapon_Horax_Highthrall</li>
+			<li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+				<li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>1.95</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>1.95</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			  </li>
+		</tools>
+		<generateCommonality>0.10</generateCommonality> <!-- Average -->
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_ATRifle_T1">
+		<defName>CGF1_MWP_Lahti_L39_</defName>
+		<label>Lahti L-39</label>
+		<description>Caliber: 20x138mmB. 10-round internal mag. Semi-Automatic.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Lahti_L39</texPath>
+			<drawSize>1.42</drawSize>
+			<drawOffsetNorth MayRequire="CarnySenpai.EnableOversizedWeapons">(0.05,0.0,-0.05)</drawOffsetNorth>
+			<drawOffsetSouth MayRequire="CarnySenpai.EnableOversizedWeapons">(0.05,0.0,-0.05)</drawOffsetSouth>
+			<drawOffsetEast MayRequire="CarnySenpai.EnableOversizedWeapons">(0.05,0.0,-0.05)</drawOffsetEast>
+			<drawOffsetWest MayRequire="CarnySenpai.EnableOversizedWeapons">(-0.05,0.0,-0.05)</drawOffsetWest>
+		</graphicData>
+		<rotatable>true</rotatable> <!-- Temp -->
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T7_WW2Firearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>190</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>49.5</Mass>
+			<AccuracyTouch>0.35</AccuracyTouch>
+			<AccuracyShort>0.50</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.82</AccuracyLong>
+			<RangedWeapon_Cooldown>4.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Military</li>
+			<li>CGF1_SniperRifle</li>
+			<li>CGF1_SniperRifle_Advanced</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Gun</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_20x138mmB_Sniper</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>44.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Heavy1</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(2,2)</drawSize>
+				<offsets>
+					<li>(0.65,0.07)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.10</generateCommonality> <!-- Average -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Common</li>
+		</thingSetMakerTags>
+	</ThingDef>
+</Defs>

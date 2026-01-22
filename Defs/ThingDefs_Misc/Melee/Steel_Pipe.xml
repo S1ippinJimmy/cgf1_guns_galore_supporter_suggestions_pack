@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Steel_Pipe" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Steel_Pipe</defName>
+		<label>steel pipe</label>
+		<description>This is a length of steel pipe. It's hard to say what it was originally made for, but it probably involved the transportation of liquids or gasses. It has found a new use as an improvised bludgeoning weapon. Lengths of pipe are certainly far from being proper weapons, but even a piece of hollowed-out steel can still hit pretty hard, and you can find old pipes to dismantle pretty much anywhere.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Steel_Pipe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.94</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ImprovisedWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<relicChance>0.01</relicChance>
+		<costList>
+			<Steel>15</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1.7</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+			<li>CGF1_Improvised_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			 <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+		</tools>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Steel_Pipe">
+		<defName>CGF1_MWP_Steel_Pipe_2_</defName>
+		<label>steel pipe</label>
+		<description>This is a length of steel pipe. It's hard to say what it was originally made for, but it probably involved the transportation of liquids or gasses. It has found a new use as an improvised bludgeoning weapon. Lengths of pipe are certainly far from being proper weapons, but even a piece of hollowed-out steel can still hit pretty hard, and you can find old pipes to dismantle pretty much anywhere.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Steel_Pipe_2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.94</drawSize>
+		</graphicData>
+		<recipeMaker Inherit="False"/>
+		<relicChance>0.0</relicChance>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+</Defs>

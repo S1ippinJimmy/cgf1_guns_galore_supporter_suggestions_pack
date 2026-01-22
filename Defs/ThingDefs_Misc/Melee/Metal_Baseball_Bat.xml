@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Metal_Baseball_Bat</defName>
+		<label>metal baseball bat</label>
+		<description>A metal club traditionally used to play the American sport of baseball, with similar implements also being used in sports such as rounders and softball. Outside of their sporting use, baseball bats are also common weapons in certain circumstances - it's essentially a heavy club designed to maximize hitting power, and that force can be turned on a threat as easily as it can be used on a ball. While it's not quite a battlefield weapon, baseball bats are very accessible, due to their relatively low cost, widespread manufacture, and the fact that they are not usually subject to extensive legal regulations like knives, guns, and other weapons. 
+		
+		This baseball bat is made of metal rather than wood. Metal bats, usually constructed out of aluminum (but possible to forge out of practically any metal), are known for their ability to hit much harder - and therefore launch a ball much further- than wooden bats. With some exceptions (such as the 1989 Major League Baseball season), professional baseball organizations do not permit the use of metal bats due to safety concerns, although they are quite common at the amateur and collegiate level.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Metal_Baseball_Bat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ToyWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<relicChance>0.1</relicChance>
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Outlander_TownGuard</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+			<li>CGF1_CopsRobbers_Modern_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+			 <li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.2</cooldownTime>
+			  </li>
+		</tools>
+		<generateCommonality>1.5</generateCommonality> <!-- Everywhere -->
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+</Defs>

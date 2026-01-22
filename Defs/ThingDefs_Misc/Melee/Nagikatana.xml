@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="CGF1_MWP_Nagikatana" ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Nagikatana</defName>
+		<label>nagikatana</label>
+		<description>Katanas are curved, single-edged longswords originating from Japan. First produced in the 14th century CE, swords like the katana were very popular with the warrior and aristocratic feudal classes, particularly the samurai, for whom katanas frequently served as sidearms carried on and off of the battlefield. Although the samurai declined and eventually vanished as a class during the Meiji period, swords styled after the katana continued to be produced for the military and police, and were used through the end of World War II.
+		
+Katanas have become a cultural icon around the world due to their prominence in post-war cinema, which has only elevated over the decades as new movies, TV shows, cartoons, video games, comics, anime, manga, and every other type of media continues to feature them, where they have developed a (somewhat tenuous) legendary reputation. Cheaply made katanas are a novelty item around the world, while expensive and finely crafted swords continue to be produced for serious martial artists and collectors.
+
+This "nagikatana" has a somewhat longer blade than the average katana.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Nagikatana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T1_RenaissanceMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Metallic</li>
+			<!--<li>CGF1_StuffCategory_Jade</li>-->
+		</stuffCategories>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>1.5</relicChance>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Biotech_Sanguophage</li>
+			<li>CGF1_Weapon_Horax_Highthrall</li>
+			<li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+			<li>CGF1_GunsGalore_SupporterSuggestions_Melee</li>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_FarEast_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.1</cooldownTime>
+			</li>
+				<li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>2.1</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+			  </li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Melee</li>
+		</thingSetMakerTags>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Nagikatana">
+		<defName>CGF1_MWP_Nagikatana_Red</defName>
+		<label>nagikatana (red)</label>
+		<description>Katanas are curved, single-edged longswords originating from Japan. First produced in the 14th century CE, swords like the katana were very popular with the warrior and aristocratic feudal classes, particularly the samurai, for whom katanas frequently served as sidearms carried on and off of the battlefield. Although the samurai declined and eventually vanished as a class during the Meiji period, swords styled after the katana continued to be produced for the military and police, and were used through the end of World War II.
+		
+Katanas have become a cultural icon around the world due to their prominence in post-war cinema, which has only elevated over the decades as new movies, TV shows, cartoons, video games, comics, anime, manga, and every other type of media continues to feature them, where they have developed a (somewhat tenuous) legendary reputation. Cheaply made katanas are a novelty item around the world, while expensive and finely crafted swords continue to be produced for serious martial artists and collectors.
+
+This "nagikatana" has a somewhat longer blade than the average katana.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Nagikatana_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<relicChance>0.1</relicChance>
+		<recipeMaker Inherit="False"/>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Biotech_Sanguophage</li>
+			<li>CGF1_Weapon_Horax_Highthrall</li>
+			<li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+		</weaponTags>
+		<thingSetMakerTags Inherit="False">
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Nagikatana">
+		<defName>CGF1_MWP_Nagikatana_Pink</defName>
+		<label>nagikatana (pink)</label>
+		<description>Katanas are curved, single-edged longswords originating from Japan. First produced in the 14th century CE, swords like the katana were very popular with the warrior and aristocratic feudal classes, particularly the samurai, for whom katanas frequently served as sidearms carried on and off of the battlefield. Although the samurai declined and eventually vanished as a class during the Meiji period, swords styled after the katana continued to be produced for the military and police, and were used through the end of World War II.
+		
+Katanas have become a cultural icon around the world due to their prominence in post-war cinema, which has only elevated over the decades as new movies, TV shows, cartoons, video games, comics, anime, manga, and every other type of media continues to feature them, where they have developed a (somewhat tenuous) legendary reputation. Cheaply made katanas are a novelty item around the world, while expensive and finely crafted swords continue to be produced for serious martial artists and collectors.
+
+This "nagikatana" has a somewhat longer blade than the average katana.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Variants/Nagikatana_Pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<relicChance>0.1</relicChance>
+		<recipeMaker Inherit="False"/>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Biotech_Sanguophage</li>
+			<li>CGF1_Weapon_Ideology_WellEquippedTraveler</li>
+		</weaponTags>
+		<thingSetMakerTags Inherit="False">
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+	</ThingDef>
+	
+</Defs>

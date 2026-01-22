@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef MayRequire="vanillaracesexpanded.archon" ParentName="CGF1_MWP_BaseHumanMakeableRanged_Throwing_NQ">
+		<defName>CGF1_MWP_Archoshuriken_</defName>
+		<label>archoshuriken</label>
+		<description>An ethereal weapon forged in the engimatic crucibles of an archotech. A fusion of unknown materials and arcane science, the archoshuriken has the uncanny ability to phase through flesh, leaving behind agonizing scars by skipping tissue out of existence. Unlike the typical melee-based weaponry used by archons, archoshurikens are intended as throwing weapons.\n\nTheir unnaturally light weight and surprisingly easy handling ability allows the wearer to throw them extremely quickly and fairly accurately, although their range is limited by the strength of the thrower. Given the fact that such weapons cannot be manufactured conventionally, and with archons' proclivity toward bigger weapons (most of them regard shurikens as being "puny"), archoshurikens are quite rare.</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Archoshuriken</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<recipeMaker Inherit="False"/>
+		<costList>
+			<Plasteel>100</Plasteel>
+		</costList>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<Mass>0.2</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.55</AccuracyShort>
+			<AccuracyMedium>0.47</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>0.4</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<techLevel>Archotech</techLevel>
+		<weaponTags>		
+			<li>CGF1_Weapon_Archon</li>
+			<li>ExcludeFromEmpireTitleReward</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>Ultratech</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_Spawn</li>
+		</tradeTags>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Projectile_Archoshuriken</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>14.9</range>
+				<soundCast>ThrowGrenade</soundCast>
+			</li>
+		</verbs>
+		<tools>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>VREA_Sear</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetration>2.0</armorPenetration>
+			  </li>
+		</tools>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+	<ThingDef MayRequire="vanillaracesexpanded.archon" ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Projectile_Archoshuriken</defName>
+		<label>archoshuriken</label>
+		<graphicData>
+			<texPath>CGF1/Ranged/Archoshuriken</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>VREA_Sear</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<spinRate>2</spinRate>
+			<speed>35</speed>
+			<armorPenetrationBase>2.0</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

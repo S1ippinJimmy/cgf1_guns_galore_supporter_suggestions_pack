@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Starbright</defName>
+		<label>Starbright</label>
+		<description>The sentry, the defiant, and ally of the meek, standing for terrene fury. Her blade a righteous maxim. The mother of many eyes, apostle of the Earth and of the heir apparent, shepherd to the billion stars as they fell from the sky. Queen of the cold, and that traitorous gray Earth, now beneath its own almighty shadow, vigil as the Moon held up the Sun. The matron and the raven, come to cease the Age of Endless Night, brings the gift of Life unto Death.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Starbright</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Archotech</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements>
+				<Crafting>20</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<CGF1_MWP_Muramasa_Dusk>1</CGF1_MWP_Muramasa_Dusk>
+			<CGF1_MWP_Muramasa_Luna>1</CGF1_MWP_Muramasa_Luna>
+		</costList>
+		<equippedAngleOffset>-10</equippedAngleOffset>
+		<relicChance>0.0001</relicChance>
+		<statBases>
+			<WorkToMake>100000</WorkToMake>
+			<MarketValue>15000</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>0.1</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.5</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+			<MoveSpeed>0.30</MoveSpeed>
+			<MeleeHitChance>0.25</MeleeHitChance>
+		</equippedStatOffsets>
+		<weaponTags Inherit="False"/>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<tradeability>Sellable</tradeability>
+		<tools>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>65</power>
+				<cooldownTime>1.1</cooldownTime>
+				<armorPenetration>2.0</armorPenetration>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>1.1</cooldownTime>
+				<armorPenetration>2.0</armorPenetration>
+			</li>
+		</tools>
+		<generateCommonality>0.0</generateCommonality> <!-- Nonexistent -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Broken_VodkaBottle_</defName>
+		<label>broken vodka bottle</label>
+		<description>A broken- and empty- bottle of vodka. The neck of the bottle is pretty easy to grip, and the sharp edges of the body could be useful to stab someone with, if you were super desperate.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Broken_VodkaBottle</texPath>
+			<drawSize>0.96</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>	
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ImprovisedWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<costList>
+			<Beer>1</Beer>
+		</costList>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<DeteriorationRate>2</DeteriorationRate>
+			<WorkToMake>500</WorkToMake>
+			<MarketValue>25</MarketValue>
+			<Mass>0.25</Mass>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Pigskin_Villager</li>
+			<li>CGF1_Weapon_VRE_SauridVillager</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+			<li>CGF1_Improvised_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>bottle</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>neck</label>
+				<capacities>
+				  <li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+
+	
+</Defs>

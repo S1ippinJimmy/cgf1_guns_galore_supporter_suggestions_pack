@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged_Throwing">
+		<defName>CGF1_MWP_SoccerBall_</defName>
+		<label>soccer ball</label>
+		<description>A ball used in the sport of soccer/association football (these are often simply called "footballs".) Although the visual design of soccer balls varies, they are subject to particularly rigorous regulations that are maintained by the International Football Association Board (IFAB.) This ball is in the iconic alternating black-and-white style popularized by the Adidas Telstar, which was first manufactured in the late 1960s. Soccer balls can be used as improvised ranged weapons, but outside some minor blunt trauma, don't expect them to be very effective.</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/SoccerBall</texPath>
+			<drawSize>0.98</drawSize>
+		</graphicData>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ToyWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<costList>
+			<Cloth>40</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>		
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pigskin_Villager</li>
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Projectile_SoccerBall</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>20.9</range>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>ball</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Projectile_SoccerBall</defName>
+		<label>soccer ball</label>
+		<graphicData>
+			<texPath>CGF1/Ranged/SoccerBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.98</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>CGF1_MWP_DamageDef_BluntProjectile</damageDef>
+			<damageAmountBase>3</damageAmountBase>
+			<spinRate>0.8</spinRate>
+			<speed>35</speed>
+			<armorPenetrationBase>0.0</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

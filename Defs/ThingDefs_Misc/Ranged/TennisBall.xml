@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged_Throwing">
+		<defName>CGF1_MWP_TennisBall_</defName>
+		<label>tennis ball</label>
+		<description>A ball used in the sport of tennis. Tennis balls have a hollow interior and are covered in a fibrous felt material. Designs for tennis balls varied considerably in the early days of the sport, which was invented in the late 19th century - in the present, tennis balls have a ubiquitous and distinct design, easily recognizable with their bright green coloring. Tennis balls can be used as thrown weapons, although they are of questionable use in this capacity, as they have very little mass.</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/TennisBall</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ToyWeapons</researchPrerequisite>
+			<skillRequirements/>
+		</recipeMaker>
+		<costList>
+			<Cloth>30</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>750</WorkToMake>
+			<Mass>0.1</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>		
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Pigskin_Villager</li>
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_SupporterSuggestions</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Projectile_TennisBall</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>15.9</range>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>ball</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Projectile_TennisBall</defName>
+		<label>tennis ball</label>
+		<graphicData>
+			<texPath>CGF1/Ranged/TennisBall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>CGF1_MWP_DamageDef_BluntProjectile</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<spinRate>0.8</spinRate>
+			<speed>29</speed>
+			<armorPenetrationBase>0.0</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

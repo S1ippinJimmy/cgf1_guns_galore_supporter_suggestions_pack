@@ -87,6 +87,7 @@
 			</li>
 		</modExtensions>
 		<generateCommonality>1.5</generateCommonality> <!-- Everywhere -->
+		<possessionCount>1</possessionCount> <!-- Possession -->
 	</ThingDef>
 	
 	<ThingDef ParentName="CGF1_MWP_Pistol_T1">

@@ -85,6 +85,7 @@
 			</li>
 		</modExtensions>
 		<generateCommonality>0.10</generateCommonality> <!-- Average -->
+		<possessionCount>1</possessionCount> <!-- Possession -->
 	</ThingDef>
 	
 </Defs>

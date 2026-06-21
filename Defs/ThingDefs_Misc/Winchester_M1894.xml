@@ -84,5 +84,6 @@
 			</li>
 		</modExtensions>
 		<generateCommonality>1.5</generateCommonality> <!-- Everywhere -->
+		<possessionCount>1</possessionCount> <!-- Possession -->
 	</ThingDef>
 </Defs>

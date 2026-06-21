@@ -80,6 +80,7 @@
 			</li>
 		</tools>
 		<generateCommonality>0.10</generateCommonality> <!-- Average -->
+		<possessionCount>1</possessionCount> <!-- Possession -->
 		<thingSetMakerTags>
 			<li>CGF1_GunsGalore_RewardAncient_Common</li>
 		</thingSetMakerTags>

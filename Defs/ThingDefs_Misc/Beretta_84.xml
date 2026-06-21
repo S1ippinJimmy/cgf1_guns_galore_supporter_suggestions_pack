@@ -84,6 +84,7 @@
 			</li>
 		</modExtensions>
 		<generateCommonality>0.5</generateCommonality> <!-- Abundant -->
+		<possessionCount>1</possessionCount> <!-- Possession -->
 	</ThingDef>
 	
 	<ThingDef ParentName="CGF1_MWP_Pistol_T1">
